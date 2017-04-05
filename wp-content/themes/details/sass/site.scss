@@ -5,8 +5,15 @@
 @import 'comments';
 @import 'img';
 
+
+.upperc {
+    text-transform: uppercase;
+}
+
+
 body {
 	margin-bottom: 90px;
+	background-color: $orange;
 }
 
 footer.site-footer {
@@ -47,9 +54,31 @@ a:hover {
 
 .blog,
 .archive {
+	
 	article {
 		margin: 1.6em 0;
+
+	&.page {
+		header {
+			.the-title {
+				text-align: center;
+			}
+		}
 	}
+
+	header{
+		margin-bottom: 1.6em;
+
+		.the-title {
+			line-height: 135%;
+		}
+	}
+
+	.main.the-content {
+		line-height: 180%;
+		text-align: justify;
+	}
+}
 }
 
 .btn-primary {
@@ -62,33 +91,7 @@ a:hover {
   }
 }
 
-body {
-	background-color: $orange;
-}
 
-article {
-
-	&.page {
-		header {
-			.the-title {
-				text-align: center;
-			}
-		}
-	}
-
-	header{
-		margin-bottom: 1.5em;
-
-		.the-title {
-			line-height: 135%;
-		}
-	}
-
-	.main.the-content {
-		line-height: 180%;
-		text-align: justify;
-	}
-}
 
 .site-footer {
 	width: 100%;

@@ -16,7 +16,7 @@
       				<article class="post"> <!-- struktur för post -->
       					<header>
                   <div class="ml-auto mr-auto bild" style="background-image: url(<?php the_post_thumbnail_url('post-featured-image'); ?>);"></div>
-      						<div class="the-title"><h1><a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"> <?php the_title(); ?> </a></h1></div>
+      						<div class="the-title upperc"><h2><a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"> <?php the_title(); ?> </a></h2></div>
       					</header>
       					<main class="the-content">
       						<?php the_excerpt(); ?>
