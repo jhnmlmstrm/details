@@ -15,17 +15,19 @@
       			?>
       				<article class="post"> <!-- struktur för post -->
       					<header>
-      						<h1 class="the-title"><?php the_title(); ?></h1>
+                  <div class="ml-auto mr-auto bild" style="background-image: url(<?php the_post_thumbnail_url('post-featured-image'); ?>);"></div>
+      						<div class="the-title"><h1><a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"> <?php the_title(); ?> </a></h1></div>
       					</header>
       					<main class="the-content">
       						<?php the_excerpt(); ?>
       					</main>
+                <hr>
       				</article>
       			<?php
       		}
       	}else {
       		/* inget att visa */
-      		_e("Det finns inga inlägg" ,"details");
+      		e_("Det finns inga inlägg" ,"details");
       	}
       ?>
 
