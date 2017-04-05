@@ -23,8 +23,8 @@ wp_list_comments($args, $comments);
 
 $comments_args = array(
 
-        'label_submit'=>'Skicka',
-        'title_reply'=>'Skriv ett svar eller en kommentar',
+        'label_submit'=>'<?php _e("Skicka", "details"); ?>',
+        'title_reply'=>'<?php _e("Skriv ett svar eller en kommentar", "details"); ?>',
         'comment_notes_after' => '',
         'comment_field' => '<p class="comment-form-comment"><label for="comment">' . _x( '', 'noun' ) . '</label><br /><textarea id="comment" name="comment" aria-required="true"></textarea></p>',
 );

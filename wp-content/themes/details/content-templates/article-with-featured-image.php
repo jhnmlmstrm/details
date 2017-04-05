@@ -7,7 +7,7 @@
 					<h1 class="the-title"><?php the_title(); ?></h1>
 					<h4 class="the_meta">
 						<span class="the-date"><?php the_date(); ?></span>
-						skriven av <span class="the-author"><?php the_author(); ?></span>
+						<?php _e("Skriven av", "details"); ?><span class="the-author"><?php the_author(); ?></span>
 					</h4>
 				</header>
 			</div>

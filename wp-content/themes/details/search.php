@@ -34,3 +34,8 @@
       </div> <!-- col-md-8 -->
     </div> <!-- row -->
   </div> <!-- container -->
+
+  <?php
+
+    get_footer();
+?>

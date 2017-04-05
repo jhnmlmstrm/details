@@ -1,4 +1,3 @@
-hej single...
 <?php
 
 	get_header();

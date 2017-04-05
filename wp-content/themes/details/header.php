@@ -31,7 +31,7 @@
                 'container_id'      =>  'navbarNavDropdown',
                 'menu_class'        =>  'navbar-nav',
                 'fallback_cb'       =>  '__return_false',
-                'items_wrap'        =>  '<ul id="%1$s" class="%2$s ml-auto mr-auto">%3$s</ul>',
+                'items_wrap'        =>  '<ul id="%1$s" class="%2$s ml-auto">%3$s</ul>',
                 'depth'             =>  2,
                 'walker'            =>  new bootstrap_4_walker_nav_menu(),
               ));

@@ -15,6 +15,9 @@ function details_setup() {
 
 		/* registrera meny */
 	register_nav_menu('header-menu', __('Header Menu', 'details'));
+
+	/* ladda in översättningar */
+	// load_theme_textdomain('details', get_template_directory() . '/languages');
 }
 
 	/* Laddas in under boot */
@@ -36,9 +39,9 @@ add_action('widgets_init', 'details_sidebars');
 function details_fotemeny() {
 	/* registrera sidebars */
 	register_sidebar(array(
-			'name'					=> 'Meny',
+			'name'					=> 'Meny footer',
 			'id'						=> 'meny-sidebar',
-			'before-widget'	=> '<li class="widget">',
+			'before-widget'	=> '<li class="widget-fot">',
 			'after-widget'	=> '</li>',
 			'before-title'	=> '<h2>',
 			'after-title'		=> '</h2>',
